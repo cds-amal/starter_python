@@ -1,16 +1,17 @@
 # Python starter
 
-Credit to https://github.com/pamelafox/python-project-template
+This is a modification of [Pamela fox's starter](https://github.com/pamelafox/python-project-template) which is awesome!
 
-This is a template repository for any Python project that comes with the following dev tools:
+This is a template repository for any Python project that uses
+[docopt](http://docopt.org/) to create a beautiful command-line
+interface. It comes with the following dev tools:
 
-ruff: identifies many errors and style issues (flake8, isort, pyupgrade)
-black: auto-formats code
-Those checks are run as pre-commit hooks using the pre-commit library.
+  - `ruff` which identifies many errors and style issues (flake8, isort, pyupgrade)
+  - `black` a code formatter
+  - pytest for testing
+  - pytest-cov to measure code coverage
 
-It includes pytest for testing plus the pytest-cov plugin to measure coverage.
-
-The checks and tests are all run using Github actions on every pull request and merge to main.
+`ruff` and `black` are run as pre-commit hooks using the pre-commit library. The checks and tests are all run using Github actions on every pull request and merge to main.
 
 ## Development instructions
 
@@ -23,12 +24,11 @@ pre-commit install # to setup git hook scripts
 python3 -m pytest
 ```
 
-## starter
+## How to run
 
 - Run program
   ```console
   python src/main.py -h
-
   ```
 
 
